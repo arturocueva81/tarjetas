@@ -124,3 +124,62 @@ body {
   }
 }
 }
+
+/* CONTENEDOR DE INPUTS */
+.inputs {
+display: flex;
+gap: 15px;
+justify-content: center;
+flex-wrap: wrap;
+}
+/* INPUT BASE */
+.inputs input {
+width: 140px;
+padding: 12px 15px;
+border-radius: 25px;
+border: none;
+outline: none;
+font-size: 14px;
+text-align: center;
+font-weight: bold;
+color: #2a5298;
+background: white;
+box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+transition: all 0.25s ease;
+}
+/* PLACEHOLDER */
+.inputs input::placeholder {
+color: #8aa3d0;
+font-weight: normal;
+}
+/* HOVER */
+.inputs input:hover {
+transform: scale(1.05);
+box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+/* FOCUS (cuando escribes) */
+.inputs input:focus {
+box-shadow: 0 0 0 3px rgba(42,82,152,0.3),
+0 8px 20px rgba(0,0,0,0.3);
+transform: scale(1.05);
+}
+
+/* Quitar flechas para la clase .no-spinner */
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spinner {
+  -moz-appearance: textfield; /* Firefox */
+  appearance: textfield;
+}
+
+.inputs p {
+  color: #ffffff;      /* texto blanco */
+  margin: 0;           /* quita margen por defecto si quieres alinearlo con los inputs */
+  font-weight: 700;    /* opcional: texto en negrita */
+  font-size: 16px;     /* opcional: ajusta tamaño según necesites */
+  align-self: center;  /* opcional: centra verticalmente el párrafo dentro del contenedor flex */
+}

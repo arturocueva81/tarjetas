@@ -10,7 +10,18 @@
 <body>
 
   <div class="top">
-    <button class="btn" onclick="crearTarjetas()">Generar</button>
+    <button class="btn" onclick="crearPintar()">Generar</button>
+  </div>
+
+  <div class="inputs">
+    <p>Pintar Casillas</p>
+    <div>
+      <input type="number" id="txtDesde" class="no-spinner" min="1" max="10" placeholder="Desde">
+    </div>
+    <div>
+      <input type="number" id="txtHasta" class="no-spinner" min="1" max="10" placeholder="Hasta">
+    </div>
+
   </div>
 
   <div class="contenedor" id="divTarjetas">
